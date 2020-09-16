@@ -1,12 +1,11 @@
 export const initialState = {
 	user: null,
-	playerlists: [],
+	playlists: [],
 	playing: false,
 	item: null,
 };
 
 const reducer = (state, action) => {
-	console.log(action);
 	switch (action.type) {
 		case 'SET_USER':
 			return {
